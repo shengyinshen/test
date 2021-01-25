@@ -1,17 +1,24 @@
-# Name of the project
+# Michigan Traffic Lab Map toolkit (MiMap)
 
 <!-- ABOUT THE PROJECT -->
 ## About the Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Project introduction...
+This MiMap toolkit allows you to load, parse, and visualize the OpenStreetMap data.
 
 Developed by   
 
 Features:
-- Main features
-    - Sub features
+- Load the OpenStreetMap data to a customized [network class](network-class-label).
+- Map data processing:
+    - Convert the undirected OSM ways to directed segments
+    - Split ways that traverse intersections
+    - Load or infer (if not) the lane usage (dedicated left/right-turn, turning bay, etc.)
+    - Identify the movements and phases in signalized intersection
+    - Build the complete connections between road segments (as well as the conflict points in unsignalized/signalized intersections)
+- Output the (processed) map data to osm/shapefile
+- An easy map data visualization platform based on Leaflet/mapbox, see demostration [[here]](https://xingminw.github.io/osm-map-toolkit/map.html).
 
 
 
