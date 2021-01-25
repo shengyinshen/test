@@ -25,35 +25,32 @@ Features:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
-1. Get a free API Key at
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
+1. Clone the repo to the local (wherever is convenient) by running:
+```
+git clone https://github.com/michigan-traffic-lab/osm-map-toolkit
+```
+2. Go to the local folder:
+```
+cd osm-map-toolkit
+```
+3. Create (or activate) the conda environment you want to install this package:
+```
+conda create -n $env_name python=3.8
+conda activate #env_name
+pip install e .
+```
 
+### Install fast-map-matching (optional)
 
+The map matching implementation is relied on a thrid-party implementation [[fmm]](https://github.com/cyang-kth/fmm). I only tested this through in Linux (Ubuntu) system. I did have difficulty installing this in the Windows system. The installment of fmm will only influence the map matching module; the map data loading/processing/output is not relied on this package. The installment documentaiton can be found at: [[fmm-wiki]](https://fmm-wiki.github.io/). There are two additional things need more consideration: 
+
+1. Remove the Python 2.7 REQUIRED in the cmakelist file located at [```fmm/python/CMakeLists.txt```](https://github.com/cyang-kth/fmm/blob/master/python/CMakeLists.txt). Just delete the ```2.7``` in line 10 and line 11.
+2. Change the cmake prefix, in my Linux system and conda environment, I use:
+```
+cmake .. -DCMAKE_INSTALL_PREFIX=/home/xingminw/Anaconda3/envs/fmm
+```
 
 
 <!-- USAGE EXAMPLES -->
