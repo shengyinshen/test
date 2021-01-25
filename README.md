@@ -7,7 +7,7 @@
 
 This MiMap toolkit allows you to load, parse, and visualize the OpenStreetMap data.
 
-Developed by   
+Developed by Xingmin Wang
 
 Features:
 - Load the OpenStreetMap data to a customized network class
@@ -56,7 +56,7 @@ cmake .. -DCMAKE_INSTALL_PREFIX=/home/xingminw/Anaconda3/envs/fmm
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Run a demo
+Load and build the network
    ```sh
    mimap.build_network_from_xml(file_name, verbose=True)
    ```
