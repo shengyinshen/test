@@ -44,7 +44,7 @@ pip install e .
 
 ### Install fast-map-matching (optional)
 
-The map matching implementation is relied on a thrid-party implementation [[fmm]](https://github.com/cyang-kth/fmm). I only tested this through in Linux (Ubuntu) system. I did have difficulty installing this in the Windows system. The installment of fmm will only influence the map matching module; the map data loading/processing/output is not relied on this package. The installment documentaiton can be found at: [[fmm-wiki]](https://fmm-wiki.github.io/). There are two additional things need more consideration: 
+The map matching implementation is relied on a thrid-party implementation [[fmm]](https://github.com/cyang-kth/fmm). It was only tested in Linux (Ubuntu) system. The installment documentaiton can be found at: [[fmm-wiki]](https://fmm-wiki.github.io/). There are two additional things need more consideration: 
 
 1. Remove the Python 2.7 REQUIRED in the cmakelist file located at [```fmm/python/CMakeLists.txt```](https://github.com/cyang-kth/fmm/blob/master/python/CMakeLists.txt). Just delete the ```2.7``` in line 10 and line 11.
 2. Change the cmake prefix, in my Linux system and conda environment, I use:
