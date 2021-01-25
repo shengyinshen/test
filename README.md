@@ -10,7 +10,7 @@ This MiMap toolkit allows you to load, parse, and visualize the OpenStreetMap da
 Developed by   
 
 Features:
-- Load the OpenStreetMap data to a customized [network class](network-class-label).
+- Load the OpenStreetMap data to a customized [network class]
 - Map data processing:
     - Convert the undirected OSM ways to directed segments
     - Split ways that traverse intersections
