@@ -97,4 +97,4 @@ Project Link: [https://github.com/michigan-traffic-lab/osm-map-toolkit](https://
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: visualization.png
