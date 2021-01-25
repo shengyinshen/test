@@ -91,7 +91,7 @@ Distributed under the MTL License. See `LICENSE` for more information.
 
 Henry Liu - henryliu@umich.edu
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/michigan-traffic-lab/osm-map-toolkit](https://github.com/michigan-traffic-lab/osm-map-toolkit)
 
 
 
