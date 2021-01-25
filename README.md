@@ -1,4 +1,4 @@
-# Michigan Traffic Lab Map toolkit (MiMap)
+# Michigan Traffic Lab Map Toolkit (MiMap)
 
 <!-- ABOUT THE PROJECT -->
 ## About the Project
